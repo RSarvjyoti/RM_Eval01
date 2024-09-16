@@ -5,10 +5,11 @@ let h4Elements = document.getElementsByTagName("h4");
 toggle.addEventListener("click", () => {
     let currentBackground = window.getComputedStyle(main).backgroundColor;
 
-    console.log(currentBackground);
+    let currentBackgroundString = currentBackground.replace(/rgba?\(|\s+|\)/g, '').split(',').slice(0, 3).join(',');
 
-    if (currentBackground === "rgb(0, 0, 0)") {
+    if (currentBackgroundString === "0,0,0") { 
         main.style.backgroundColor = "white";
+        main.style.color = "black";
         
         for (let h4 of h4Elements) {
             h4.style.color = "black";
@@ -18,9 +19,9 @@ toggle.addEventListener("click", () => {
         dark_mode.src = "image/light_mode.png";
         toggle.innerHTML = "";
         toggle.append(dark_mode);
-    } else {
+    } else { 
         main.style.backgroundColor = "black";
-        
+        main.style.color = "white";
         for (let h4 of h4Elements) {
             h4.style.color = "white";
         }
