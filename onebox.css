@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sideNav {
+    width: 6vw;
+    background: #101113;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bodySide {
+    width: 94vw;
+    height: 90vh;
+}
+
+.logo {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.items>div {
+    cursor: pointer;
+}
+
+.items>div>a>img {
+    width: 30px;
+    height: 30px;
+}
+
+.header {
+    height: 10vh;
+    background-color: #202022;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.header_item {
+    width: 20%;
+    display: flex;
+    gap: 40px;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content>h4 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.content > img {
+    width: 280.02px;
+    height: 229.4px;
+}
+
+.content>div {
+    width: 289px;
+    height: 54px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.content>div>p {
+    text-align: center;
+    color: #9e9e9e;
+}
+
+
+select{
+    background: none;
+    border: none;
+    color: #fff;
+    gap: 20px;
+}
+
+#toggle {
+    cursor: pointer;
+}
+
+.toggle_btn {
+    width: 100px;
+    border: 1px solid #9e9e9e;
+    border-radius: 10px;
+}
+
+.home {
+    display: flex;
+}
+
+.main_nav {
+    width: 20vw;
+    height: 90vh;
+    color: #fff;
+    height: auto;
+}
+
+.main_content {
+    width: 54vw;
+    background-color: aqua;
+    height: 90vh;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+}
+.left>div:nth-child(1) > input {
+    padding: 5px 10px;
+}
+
+/* .item {
+
+} */
+
+
+/* .right {
+
+} */
+
+@media all and (min-width: 551px) and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sideNav {
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .items {
+        height: auto;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .items>div>img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .bodySide {
+        width: 100vw;
+        height: auto;
+    }
+
+    .header {
+        height: 8vh;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .header_logo {
+        width: 20%;
+    }
+
+    .header_item {
+        width: auto;
+        display: flex;
+        gap: 20px;
+    }
+
+    .main {
+        height: auto;
+        padding: 20px;
+    }
+
+    .content>img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .content>h4 {
+        font-size: 16px;
+    }
+
+    .content>div>p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sideNav {
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .items {
+        height: auto;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .items>div>img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .bodySide {
+        width: 100vw;
+        height: auto;
+    }
+
+    .header {
+        height: 8vh;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .header_logo {
+        width: 25%;
+        text-align: center;
+    }
+
+    .header_item {
+        width: auto;
+        gap: 10px;
+    }
+
+    .main {
+        height: auto;
+        padding: 15px;
+    }
+
+    .content>img {
+        width: 180px;
+        height: 150px;
+    }
+
+    .content>h4 {
+        font-size: 14px;
+    }
+
+    .content>div>p {
+        font-size: 12px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    .toggle_btn {
+        width: 70px;
+        height: 35px;
+    }
+}

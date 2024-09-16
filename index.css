@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 64px;
+    padding: 10px 20px;
+    gap: 0px;
+    border-bottom: 1px solid #353637;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.header h3 {
+    color: #fff;
+}
+
+.login {
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.login-box {
+    width: 90%;
+    max-width: 460px;
+    height: auto;
+    padding: 24px 20px;
+    gap: 20px;
+    border-radius: 17px;
+    border: 1px solid #353637;
+    background-color: #111213;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-box>p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 48px;
+    gap: 16px;
+    color: #fff;
+    border: 1px solid #353637;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    cursor: pointer;
+}
+
+.login-box > button {
+    padding: 13px 35px 13px 35px;
+    gap: 10px;
+    border-radius: 4px;
+    background: linear-gradient(91.73deg, #4B63DD -2.99%, rgba(5, 36, 191, 0.99) 95.8%);
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: #111213;
+    color: #353637;
+}
+
+@media all and (min-width: 551px) and (max-width: 700px) {
+    .header {
+        padding: 10px 50px;
+    }
+
+    .login-box {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .login {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 380px;
+        padding: 24px 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        padding: 10px;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 20px;
+    }
+}
